@@ -35,15 +35,15 @@ $(document).keypress(function() {
 });
 
 
-$(".staart").click(function () {                    //add;
-  if (!started) {                                      //add;
-                                                    //add;
-    $("#level-title").text("Level " + level);          //add;
-    nextSequence();                                    //add;
-    started = true;                                     //add;
+$(".staart").click(function () {                    
+  if (!started) {                                      
+                                                    
+    $("#level-title").text("Level " + level);          
+    nextSequence();                                    
+    started = true;                                   
 
-  }                                                    //add;
-});                                                     //add;
+  }                                                    
+});                                                     
 
 
 
@@ -74,7 +74,7 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
         $("#level-title").text("Game Over, Press Any Key or click Restart");
 
-          $(".staart").text("Restart");  //add;
+          $(".staart").text("Restart");  
           }, 200);
 
            startOver();
@@ -105,9 +105,9 @@ gamePattern=[];
 
 function nextSequence() {
 
-  setTimeout(function() {            //add
-      $(".staart").text("Restart");  //add;
-    }, 200,);                          //add;
+  setTimeout(function() {            
+      $(".staart").text("Restart");  
+    }, 200,);                          
   userClickedPattern = [];
   level++;
   $("#level-title").text("Level " + level);
